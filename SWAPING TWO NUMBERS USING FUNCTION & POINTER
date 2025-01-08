@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+int swaping( int*a ,int*b)
+{
+    *a=*a+*b; // a now holds the sum of both numbers
+    *b=*a-*b; // b now holds the original value of a
+    *a=*a-*b; // a now holds the original value of b
+}
+
+int main()
+{ int a,b;
+printf("enter the values");
+scanf(" %d %d", &a,&b);
+ swaping(&a,&b);
+printf("swaping numbers are : %d %d", a,b);
+
+ return 0;
+}
